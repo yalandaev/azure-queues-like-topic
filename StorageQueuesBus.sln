@@ -5,6 +5,18 @@ VisualStudioVersion = 15.0.28307.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageQueuesBus", "StorageQueuesBus\StorageQueuesBus.csproj", "{D714650A-CE42-48B2-9D3A-ED8969B0DD27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBus", "MessageBus\MessageBus.csproj", "{5B53035E-3C05-4E78-939E-4AC987BFDA3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBus.AzureStorageQueue", "MessageBus.AzureStorageQueue\MessageBus.AzureStorageQueue.csproj", "{0F4E9B23-35B5-4321-AD10-11891BC2E155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBus.Events", "MessageBus.Events\MessageBus.Events.csproj", "{B5C97AA1-6370-404C-950E-CAFEDD54A92B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.Shopper", "BusinessLogic.Shopper\BusinessLogic.Shopper.csproj", "{D0C11339-772F-4DEA-9180-4F3BF1BB74E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.Orders", "BusinessLogic.Orders\BusinessLogic.Orders.csproj", "{024E9B6C-FE2A-4F15-B733-4E2BAF855F5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.Dotmailer", "BusinessLogic.Dotmailer\BusinessLogic.Dotmailer.csproj", "{EFEE05BC-CE40-4718-8A0B-2FAB3E5B3091}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +27,30 @@ Global
 		{D714650A-CE42-48B2-9D3A-ED8969B0DD27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D714650A-CE42-48B2-9D3A-ED8969B0DD27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D714650A-CE42-48B2-9D3A-ED8969B0DD27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B53035E-3C05-4E78-939E-4AC987BFDA3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B53035E-3C05-4E78-939E-4AC987BFDA3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B53035E-3C05-4E78-939E-4AC987BFDA3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B53035E-3C05-4E78-939E-4AC987BFDA3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F4E9B23-35B5-4321-AD10-11891BC2E155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4E9B23-35B5-4321-AD10-11891BC2E155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4E9B23-35B5-4321-AD10-11891BC2E155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4E9B23-35B5-4321-AD10-11891BC2E155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5C97AA1-6370-404C-950E-CAFEDD54A92B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5C97AA1-6370-404C-950E-CAFEDD54A92B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5C97AA1-6370-404C-950E-CAFEDD54A92B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5C97AA1-6370-404C-950E-CAFEDD54A92B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0C11339-772F-4DEA-9180-4F3BF1BB74E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0C11339-772F-4DEA-9180-4F3BF1BB74E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0C11339-772F-4DEA-9180-4F3BF1BB74E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0C11339-772F-4DEA-9180-4F3BF1BB74E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024E9B6C-FE2A-4F15-B733-4E2BAF855F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024E9B6C-FE2A-4F15-B733-4E2BAF855F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024E9B6C-FE2A-4F15-B733-4E2BAF855F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024E9B6C-FE2A-4F15-B733-4E2BAF855F5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFEE05BC-CE40-4718-8A0B-2FAB3E5B3091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFEE05BC-CE40-4718-8A0B-2FAB3E5B3091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFEE05BC-CE40-4718-8A0B-2FAB3E5B3091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFEE05BC-CE40-4718-8A0B-2FAB3E5B3091}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

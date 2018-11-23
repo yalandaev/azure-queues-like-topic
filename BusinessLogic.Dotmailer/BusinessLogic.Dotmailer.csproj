@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D714650A-CE42-48B2-9D3A-ED8969B0DD27}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>StorageQueuesBus</RootNamespace>
-    <AssemblyName>StorageQueuesBus</AssemblyName>
+    <ProjectGuid>{EFEE05BC-CE40-4718-8A0B-2FAB3E5B3091}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLogic.Dotmailer</RootNamespace>
+    <AssemblyName>BusinessLogic.Dotmailer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -45,38 +44,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BusExtensions.cs" />
+    <Compile Include="DotmailerService.cs" />
+    <Compile Include="EventHandlers\UpdateShopperProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BusinessLogic.Dotmailer\BusinessLogic.Dotmailer.csproj">
-      <Project>{efee05bc-ce40-4718-8a0b-2fab3e5b3091}</Project>
-      <Name>BusinessLogic.Dotmailer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BusinessLogic.Orders\BusinessLogic.Orders.csproj">
-      <Project>{024e9b6c-fe2a-4f15-b733-4e2baf855f5a}</Project>
-      <Name>BusinessLogic.Orders</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BusinessLogic.Shopper\BusinessLogic.Shopper.csproj">
-      <Project>{d0c11339-772f-4dea-9180-4f3bf1bb74e8}</Project>
-      <Name>BusinessLogic.Shopper</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MessageBus.AzureStorageQueue\MessageBus.AzureStorageQueue.csproj">
-      <Project>{0F4E9B23-35B5-4321-AD10-11891BC2E155}</Project>
-      <Name>MessageBus.AzureStorageQueue</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MessageBus.Events\MessageBus.Events.csproj">
-      <Project>{b5c97aa1-6370-404c-950e-cafedd54a92b}</Project>
+      <Project>{B5C97AA1-6370-404C-950E-CAFEDD54A92B}</Project>
       <Name>MessageBus.Events</Name>
     </ProjectReference>
     <ProjectReference Include="..\MessageBus\MessageBus.csproj">
       <Project>{5B53035E-3C05-4E78-939E-4AC987BFDA3A}</Project>
       <Name>MessageBus</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
